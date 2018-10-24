@@ -7,17 +7,17 @@
   
   <title>how do i set up this blog site | Von Wunderland</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="how to set up a hexo blog site to be visited via *.github.io?12 I tried to set up hexo once months ago, but didn’t touch it until recently. I screwed it so now I have to set it up again. In order to r">
+  <meta name="description" content="how to set up a hexo blog site to be visited via *.github.io?I tried to set up hexo once months ago, but didn’t touch it until recently. I screwed it so now I have to set it up again. In order to reme">
 <meta property="og:type" content="article">
 <meta property="og:title" content="how do i set up this blog site">
 <meta property="og:url" content="https://sidizhan.github.io/2018/10/24/how-do-i-set-up-this-blog-site/index.html">
 <meta property="og:site_name" content="Von Wunderland">
-<meta property="og:description" content="how to set up a hexo blog site to be visited via *.github.io?12 I tried to set up hexo once months ago, but didn’t touch it until recently. I screwed it so now I have to set it up again. In order to r">
+<meta property="og:description" content="how to set up a hexo blog site to be visited via *.github.io?I tried to set up hexo once months ago, but didn’t touch it until recently. I screwed it so now I have to set it up again. In order to reme">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-10-24T14:32:12.626Z">
+<meta property="og:updated_time" content="2018-10-24T14:33:54.093Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="how do i set up this blog site">
-<meta name="twitter:description" content="how to set up a hexo blog site to be visited via *.github.io?12 I tried to set up hexo once months ago, but didn’t touch it until recently. I screwed it so now I have to set it up again. In order to r">
+<meta name="twitter:description" content="how to set up a hexo blog site to be visited via *.github.io?I tried to set up hexo once months ago, but didn’t touch it until recently. I screwed it so now I have to set it up again. In order to reme">
   
     <link rel="alternate" href="/atom.xml" title="Von Wunderland" type="application/atom+xml">
   
@@ -86,8 +86,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="how-to-set-up-a-hexo-blog-site-to-be-visited-via-github-io"><a href="#how-to-set-up-a-hexo-blog-site-to-be-visited-via-github-io" class="headerlink" title="how to set up a hexo blog site to be visited via *.github.io?"></a>how to set up a hexo blog site to be visited via *.github.io?</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>I tried to set up hexo once months ago, but didn’t touch it until recently. I screwed it so now I have to set it up again. In order to remember all the steps, I decide to record the process down here.</p>
+        <h1 id="how-to-set-up-a-hexo-blog-site-to-be-visited-via-github-io"><a href="#how-to-set-up-a-hexo-blog-site-to-be-visited-via-github-io" class="headerlink" title="how to set up a hexo blog site to be visited via *.github.io?"></a>how to set up a hexo blog site to be visited via *.github.io?</h1><p>I tried to set up hexo once months ago, but didn’t touch it until recently. I screwed it so now I have to set it up again. In order to remember all the steps, I decide to record the process down here.</p>
 <h2 id="install"><a href="#install" class="headerlink" title="install"></a>install</h2><p>First of all you should install node, npm and yarn. And then hexo itself (a git repository as starter).<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure></p>
 <p>Go to a directory/workspace that you want to put your site, for instance <code>vonwunderland</code>. Use npm to install all the required packages in <code>package.json</code>.<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init vonwunderland</span><br><span class="line"><span class="built_in">cd</span> vonwunderland</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure></p>
 <p>Now if you run the server you will be able to visit your site with a hello world post locally (localhost:4000).<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure></p>
@@ -102,14 +101,14 @@
 <p>then add the remote repo here, push it.<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin git@github.com:SidiZhan/sidizhan.github.io.git</span><br><span class="line">git push --<span class="built_in">set</span>-upstream origin dev</span><br></pre></td></tr></table></figure></p>
 <h2 id="Tips"><a href="#Tips" class="headerlink" title="Tips: "></a>Tips: </h2><p>it may take minutes to update the setting in github.io, so if you can only visit home page by specifying the index.html (<a href="https://sidizhan.github.io/index.html)">https://sidizhan.github.io/index.html)</a>, or the new posts won’t show up, just be patient and wait.</p>
 <h2 id="in-a-nut-shell"><a href="#in-a-nut-shell" class="headerlink" title="in a nut shell"></a>in a nut shell</h2><p>Don’t forget the process to publish a new post:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> vonwunderland</span><br><span class="line">hexo new <span class="string">"new post"</span></span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">"add a new post"</span></span><br><span class="line">git push</span><br></pre></td></tr></table></figure></p>
-<p>you need to <code>generate</code> before  <code>deploy</code> if you want to push the new post into github. </p>
+<p>you need to <code>generate</code> the new post before  <code>deploy</code> if you want to push the new post into github. </p>
 <h2 id="references"><a href="#references" class="headerlink" title="references"></a>references</h2><p><a href="https://hexo.io/docs/configuration" target="_blank" rel="noopener">hexo</a></p>
 <p><a href="https://malekbenz.com/blog/2016/09/10/Create-Host-Blog-for-free-with-Hexo-Github" target="_blank" rel="noopener">Create-Host-Blog-for-free-with-Hexo-Github</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://sidizhan.github.io/2018/10/24/how-do-i-set-up-this-blog-site/" data-id="cjnn9d2wk0000rwj8dr7nzfy1" class="article-share-link">Share</a>
+      <a data-url="https://sidizhan.github.io/2018/10/24/how-do-i-set-up-this-blog-site/" data-id="cjnn9fpgm0000utj8iela7npd" class="article-share-link">Share</a>
       
       
     </footer>
