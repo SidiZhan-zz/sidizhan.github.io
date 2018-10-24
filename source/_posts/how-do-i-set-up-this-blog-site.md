@@ -5,9 +5,6 @@ tags:
 ---
 how to set up a hexo blog site to be visited via *.github.io?
 ======
-```bash
-
-```
 
 I tried to set up hexo once months ago, but didn't touch it until recently. I screwed it so now I have to set it up again. In order to remember all the steps, I decide to record the process down here.
 
@@ -60,6 +57,25 @@ hexo deploy
 ```
 and visit the website at [https://sidizhan.github.io/](https://sidizhan.github.io/)!
 
+dev branch
+----
+If you want to write the blog everywhere, you can push your local codes to the same repo (`master` has been taken as website io path, so let us choose `dev`).
+
+First init the directory as a repo locally. Create `dev` branch to take place of `master` (rename?).
+```bash
+cd ..
+git init vonwunderland
+cd vonwunderland
+git checkout -b dev
+git add .
+git commit -m "set up dev"
+```
+then add the remote repo here, push it.
+```bash
+git remote add origin git@github.com:SidiZhan/sidizhan.github.io.git
+git push --set-upstream origin dev
+```
+
 Tips: 
 -----
 it may take minutes to update the setting in github.io, so if you can only visit home page by specifying the index.html (https://sidizhan.github.io/index.html), or the new posts won't show up, just be patient and wait.
@@ -72,8 +88,11 @@ cd vonwunderland
 hexo new "new post"
 hexo generate
 hexo deploy
+git add .
+git commit -m "add a new post"
+git push
 ```
-you need to `generate` before  `deploy` if you want to push the new post into github. 
+you need to `generate` the new post before  `deploy` if you want to push the new post into github. 
 
 
 references
