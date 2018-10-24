@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>how do i set up this blog site | Von Wunderland</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="how to set up a hexo blog site to be visited via *.github.io?12 I tried to set up hexo once months ago, but didn’t touch it until recently. I screwed it so now I have to set it up again. In order to r">
+<meta property="og:type" content="article">
+<meta property="og:title" content="how do i set up this blog site">
+<meta property="og:url" content="https://sidizhan.github.io/2018/10/24/how-do-i-set-up-this-blog-site/index.html">
+<meta property="og:site_name" content="Von Wunderland">
+<meta property="og:description" content="how to set up a hexo blog site to be visited via *.github.io?12 I tried to set up hexo once months ago, but didn’t touch it until recently. I screwed it so now I have to set it up again. In order to r">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-10-24T13:56:43.384Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="how do i set up this blog site">
+<meta name="twitter:description" content="how to set up a hexo blog site to be visited via *.github.io?12 I tried to set up hexo once months ago, but didn’t touch it until recently. I screwed it so now I have to set it up again. In order to r">
+  
+    <link rel="alternate" href="/atom.xml" title="Von Wunderland" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Von Wunderland</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://sidizhan.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-how-do-i-set-up-this-blog-site" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/10/24/how-do-i-set-up-this-blog-site/" class="article-date">
+  <time datetime="2018-10-24T13:27:41.000Z" itemprop="datePublished">2018-10-24</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      how do i set up this blog site
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="how-to-set-up-a-hexo-blog-site-to-be-visited-via-github-io"><a href="#how-to-set-up-a-hexo-blog-site-to-be-visited-via-github-io" class="headerlink" title="how to set up a hexo blog site to be visited via *.github.io?"></a>how to set up a hexo blog site to be visited via *.github.io?</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>I tried to set up hexo once months ago, but didn’t touch it until recently. I screwed it so now I have to set it up again. In order to remember all the steps, I decide to record the process down here.</p>
+<h2 id="install"><a href="#install" class="headerlink" title="install"></a>install</h2><p>First of all you should install node, npm and yarn. And then hexo itself (a git repository as starter).<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure></p>
+<p>Go to a directory/workspace that you want to put your site, for instance <code>vonwunderland</code>. Use npm to install all the required packages in <code>package.json</code>.<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init vonwunderland</span><br><span class="line"><span class="built_in">cd</span> vonwunderland</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure></p>
+<p>Now if you run the server you will be able to visit your site with a hello world post locally (localhost:4000).<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure></p>
+<h2 id="new-post"><a href="#new-post" class="headerlink" title="new post"></a>new post</h2><p>Create a new post by:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new <span class="string">"how do i set up this blog site"</span></span><br></pre></td></tr></table></figure></p>
+<p>then edit it with markdown format, in any text editor (me, visual studio code with markdown preview plug-in). The server will auto track the changes.</p>
+<h2 id="to-github"><a href="#to-github" class="headerlink" title="to github"></a>to github</h2><p>Now you want to deploy this onto github so that everyone can visit your blog site. So go to github and create a repo named <code>yourname.github.io</code> (my is <code>sidizhan.github.io</code>). Ignore the node. Then locally, install the deployer.<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></p>
+<p>Copy the url for repo and paste it in <code>_config.yml</code>, under <code>deploy:</code>, final edition is like:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: git@github.com:SidiZhan/sidizhan.github.io.git</span><br><span class="line">  branch: master</span><br><span class="line">  message: <span class="string">"&#123;&#123; now('YYYY-MM-DD HH:mm:ss') &#125;&#125;"</span></span><br></pre></td></tr></table></figure></p>
+<p>Then, you can deploy:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy</span><br></pre></td></tr></table></figure></p>
+<p>and visit the website at <a href="https://sidizhan.github.io/">https://sidizhan.github.io/</a>!</p>
+<h2 id="Tips"><a href="#Tips" class="headerlink" title="Tips: "></a>Tips: </h2><p>it may take minutes to update the setting in github.io, so if you can only visit home page by specifying the index.html (<a href="https://sidizhan.github.io/index.html)">https://sidizhan.github.io/index.html)</a>, or the new posts won’t show up, just be patient and wait.</p>
+<h2 id="in-a-nut-shell"><a href="#in-a-nut-shell" class="headerlink" title="in a nut shell"></a>in a nut shell</h2><p>Don’t forget the process to publish a new post:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> vonwunderland</span><br><span class="line">hexo new <span class="string">"new post"</span></span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure></p>
+<h2 id="references"><a href="#references" class="headerlink" title="references"></a>references</h2><p><a href="https://hexo.io/docs/configuration" target="_blank" rel="noopener">hexo</a></p>
+<p><a href="https://malekbenz.com/blog/2016/09/10/Create-Host-Blog-for-free-with-Hexo-Github" target="_blank" rel="noopener">Create-Host-Blog-for-free-with-Hexo-Github</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://sidizhan.github.io/2018/10/24/how-do-i-set-up-this-blog-site/" data-id="cjnn84bzp00013nj8sv5vnx0w" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2018/10/24/python-data-analyst-interview/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">python data analyst interview</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/10/24/how-do-i-set-up-this-blog-site/">how do i set up this blog site</a>
+          </li>
+        
+          <li>
+            <a href="/2018/10/24/python-data-analyst-interview/">python data analyst interview</a>
+          </li>
+        
+          <li>
+            <a href="/2018/10/24/c-sharp-in-depth-ch-11/">c sharp in depth ch 11</a>
+          </li>
+        
+          <li>
+            <a href="/2018/10/24/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 Sidi Zhan<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>

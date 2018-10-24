@@ -62,6 +62,57 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-how-do-i-set-up-this-blog-site" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/10/24/how-do-i-set-up-this-blog-site/" class="article-date">
+  <time datetime="2018-10-24T13:27:41.000Z" itemprop="datePublished">2018-10-24</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/10/24/how-do-i-set-up-this-blog-site/">how do i set up this blog site</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="how-to-set-up-a-hexo-blog-site-to-be-visited-via-github-io"><a href="#how-to-set-up-a-hexo-blog-site-to-be-visited-via-github-io" class="headerlink" title="how to set up a hexo blog site to be visited via *.github.io?"></a>how to set up a hexo blog site to be visited via *.github.io?</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>I tried to set up hexo once months ago, but didn’t touch it until recently. I screwed it so now I have to set it up again. In order to remember all the steps, I decide to record the process down here.</p>
+<h2 id="install"><a href="#install" class="headerlink" title="install"></a>install</h2><p>First of all you should install node, npm and yarn. And then hexo itself (a git repository as starter).<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure></p>
+<p>Go to a directory/workspace that you want to put your site, for instance <code>vonwunderland</code>. Use npm to install all the required packages in <code>package.json</code>.<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init vonwunderland</span><br><span class="line"><span class="built_in">cd</span> vonwunderland</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure></p>
+<p>Now if you run the server you will be able to visit your site with a hello world post locally (localhost:4000).<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure></p>
+<h2 id="new-post"><a href="#new-post" class="headerlink" title="new post"></a>new post</h2><p>Create a new post by:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new <span class="string">"how do i set up this blog site"</span></span><br></pre></td></tr></table></figure></p>
+<p>then edit it with markdown format, in any text editor (me, visual studio code with markdown preview plug-in). The server will auto track the changes.</p>
+<h2 id="to-github"><a href="#to-github" class="headerlink" title="to github"></a>to github</h2><p>Now you want to deploy this onto github so that everyone can visit your blog site. So go to github and create a repo named <code>yourname.github.io</code> (my is <code>sidizhan.github.io</code>). Ignore the node. Then locally, install the deployer.<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></p>
+<p>Copy the url for repo and paste it in <code>_config.yml</code>, under <code>deploy:</code>, final edition is like:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repo: git@github.com:SidiZhan/sidizhan.github.io.git</span><br><span class="line">  branch: master</span><br><span class="line">  message: <span class="string">"&#123;&#123; now('YYYY-MM-DD HH:mm:ss') &#125;&#125;"</span></span><br></pre></td></tr></table></figure></p>
+<p>Then, you can deploy:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo deploy</span><br></pre></td></tr></table></figure></p>
+<p>and visit the website at <a href="https://sidizhan.github.io/">https://sidizhan.github.io/</a>!</p>
+<h2 id="Tips"><a href="#Tips" class="headerlink" title="Tips: "></a>Tips: </h2><p>it may take minutes to update the setting in github.io, so if you can only visit home page by specifying the index.html (<a href="https://sidizhan.github.io/index.html)">https://sidizhan.github.io/index.html)</a>, or the new posts won’t show up, just be patient and wait.</p>
+<h2 id="in-a-nut-shell"><a href="#in-a-nut-shell" class="headerlink" title="in a nut shell"></a>in a nut shell</h2><p>Don’t forget the process to publish a new post:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> vonwunderland</span><br><span class="line">hexo new <span class="string">"new post"</span></span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure></p>
+<h2 id="references"><a href="#references" class="headerlink" title="references"></a>references</h2><p><a href="https://hexo.io/docs/configuration" target="_blank" rel="noopener">hexo</a></p>
+<p><a href="https://malekbenz.com/blog/2016/09/10/Create-Host-Blog-for-free-with-Hexo-Github" target="_blank" rel="noopener">Create-Host-Blog-for-free-with-Hexo-Github</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://sidizhan.github.io/2018/10/24/how-do-i-set-up-this-blog-site/" data-id="cjnn84bzp00013nj8sv5vnx0w" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-python-data-analyst-interview" class="article article-type-post" itemscope="" itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/10/24/python-data-analyst-interview/" class="article-date">
@@ -94,7 +145,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://sidizhan.github.io/2018/10/24/python-data-analyst-interview/" data-id="cjnn6z7m30002skj8re7do717" class="article-share-link">Share</a>
+      <a data-url="https://sidizhan.github.io/2018/10/24/python-data-analyst-interview/" data-id="cjnn84bzs00033nj8mkolyhdh" class="article-share-link">Share</a>
       
       
     </footer>
@@ -244,7 +295,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://sidizhan.github.io/2018/10/24/c-sharp-in-depth-ch-11/" data-id="cjnn6z7m10001skj89ikar6xd" class="article-share-link">Share</a>
+      <a data-url="https://sidizhan.github.io/2018/10/24/c-sharp-in-depth-ch-11/" data-id="cjnn84bzk00003nj8tvh91x5a" class="article-share-link">Share</a>
       
       
     </footer>
@@ -289,7 +340,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://sidizhan.github.io/2018/10/24/hello-world/" data-id="cjnn6z7lx0000skj88gt31hcf" class="article-share-link">Share</a>
+      <a data-url="https://sidizhan.github.io/2018/10/24/hello-world/" data-id="cjnn84bzr00023nj8bgo9dvig" class="article-share-link">Share</a>
       
       
     </footer>
@@ -328,6 +379,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2018/10/24/how-do-i-set-up-this-blog-site/">how do i set up this blog site</a>
+          </li>
         
           <li>
             <a href="/2018/10/24/python-data-analyst-interview/">python data analyst interview</a>
